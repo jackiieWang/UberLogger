@@ -20,8 +20,8 @@ public class TestUberLogger : MonoBehaviour
 
     void OnDestroy()
     {
-        TestThread.Abort();
-        TestThread.Join();
+        TestThread?.Abort();
+        TestThread?.Join();
     }
     void TestThreadEntry()
     {
